@@ -1,5 +1,10 @@
+function submitCalcul(ev) {
+    ev.preventDefault();
 
-
-function submitCalcul() {
-    alert('Calcul');
+    console.log(ev);
+    //alert('Calcul');
 }
+
+
+
+document.getElementById('formcalc').addEventListener('submit', submitCalcul);
