@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculateur</h1>
+        <div class="row">
+            <div class="col-6">
+                <form onsubmit="submitCalcul()">
+                    <div class="mb-3">
+                        <label class="form-label">Montant</label>
+                        <input type="number" class="form-control" placeholder="Montant en €" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Années</label>
+                        <input type="number" class="form-control" placeholder="Années" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Taux</label>
+                        <input type="number" class="form-control" placeholder="Taux" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Calculer</button>
+                </form>
+            </div>
+            <div class="col-6">
+                test 2
+            </div>
+        </div>
+    </div>
+
+    <!-- commentaire -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

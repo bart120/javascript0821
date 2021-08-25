@@ -1,0 +1,5 @@
+
+
+function submitCalcul() {
+    alert('Calcul');
+}

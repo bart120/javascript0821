@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "start": "http-server -p 9000"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "http-server": "^13.0.1"
+  },
+  "name": "javascript0821",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bart120/javascript0821.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bart120/javascript0821/issues"
+  },
+  "homepage": "https://github.com/bart120/javascript0821#readme",
+  "description": ""
+}
