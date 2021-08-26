@@ -31,6 +31,10 @@
         function fin(ev) {
             //ev.target.style.display = 'none';
             //document.getElementById('page').style.display = 'block';
+            ev.target.addEventListener('transitionend', function () {
+                //console.log('fin anim');
+                ev.target.style.display = 'none';
+            });
             ev.target.classList.add('hidden');
         }
 
@@ -41,3 +45,5 @@
         document.addEventListener('DOMContentLoaded', init);
     </script>
 </body>
+
+</html>
