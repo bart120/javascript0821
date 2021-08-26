@@ -3,6 +3,7 @@
     "start": "http-server -p 9000"
   },
   "dependencies": {
+    "@splidejs/splide": "^2.4.21",
     "bootstrap": "^5.1.0",
     "http-server": "^13.0.1"
   },

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <style>
+        video {
+            opacity: 1;
+            transition: 2s;
+            position: absolute;
+            z-index: 100;
+        }
+
+        video.hidden {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <video class="moving_logo_content" id="videoarrivee" muted="" autoplay="true" height="1300px"
+        src="https://bonnejournee.tv/wp-content/themes/BonneJournee/img/animation.mp4">
+    </video>
+    <div id="page" class="container" style="background-color: red;">
+        <h1>HELLO</h1>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        function fin(ev) {
+            //ev.target.style.display = 'none';
+            //document.getElementById('page').style.display = 'block';
+            ev.target.classList.add('hidden');
+        }
+
+        function init() {
+            let video = document.getElementById('videoarrivee');
+            video.addEventListener('ended', fin);
+        }
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
