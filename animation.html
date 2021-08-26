@@ -29,20 +29,17 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         function fin(ev) {
-            //ev.target.style.display = 'none';
-            //document.getElementById('page').style.display = 'block';
-            ev.target.addEventListener('transitionend', function () {
-                //console.log('fin anim');
-                ev.target.style.display = 'none';
+            ev.target.addEventListener("transitionend", function () {
+                ev.target.style.display = "none";
             });
-            ev.target.classList.add('hidden');
+            ev.target.classList.add("hidden");
         }
 
         function init() {
-            let video = document.getElementById('videoarrivee');
-            video.addEventListener('ended', fin);
+            let video = document.getElementById("videoarrivee");
+            video.addEventListener("ended", fin);
         }
-        document.addEventListener('DOMContentLoaded', init);
+        document.addEventListener("DOMContentLoaded", init);
     </script>
 </body>
 
